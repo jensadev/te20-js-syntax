@@ -9,4 +9,8 @@
 // 	}
 // }
 
-// ni behöver 2 inmatningar och sedan en uträkning och en utskrift
+// läs in 2 st inputs
+// på knappclick, räkna ut hypotenusan
+const firstInput = document.querySelector('#first-input');
+const a = firstInput.value;
+let c = Math.sqrt(a*a + b*b);
