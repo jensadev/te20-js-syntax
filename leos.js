@@ -10,3 +10,18 @@
 // }
 
 // ni behöver 2 inmatningar och sedan en uträkning och en utskrift
+
+const a = document.querySelector('#input-field');
+const b = document.querySelector('#input-fielda');
+
+const button = document.querySelector('button');
+
+button.addEventListener('click', () => {
+    const a = a.value;
+    const b = b.value;
+    const c = Math.sqrt(a*a + b*b)
+    const messageBox = document.querySelector('#message-box');
+    let message = document.createElement('p');
+    message.textContent = `hypetenusan är ${c} cm`;
+    messageBox.appendChild(message);
+});
